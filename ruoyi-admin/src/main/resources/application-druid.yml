@@ -6,9 +6,9 @@ spring:
         druid:
             # 主库数据源
             master:
-                url: jdbc:mysql://localhost:3306/wms?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
-                username:
-                password:
+                url: jdbc:mysql://127.0.0.1:3306/nky-wms?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+                username: root
+                password: root
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭
@@ -29,7 +29,7 @@ spring:
         # 数据库索引
         database: 1
         # 密码
-        password:
+        password: 123456
 ruoyi:
     # 文件路径 示例（ Windows配置D:/ruoyi/uploadPath，Linux配置 /home/ruoyi/uploadPath）
     profile: C:/ruoyi/uploadPath

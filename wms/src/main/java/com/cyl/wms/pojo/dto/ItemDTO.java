@@ -11,6 +11,7 @@ import lombok.Data;
  */
 @Data
 public class ItemDTO extends BaseAudit {
+    // 将id作为条形码id
     private Long id;
     private String itemNo;
     private String itemName;
