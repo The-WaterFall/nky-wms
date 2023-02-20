@@ -33,6 +33,7 @@
         <jwt.version>0.9.1</jwt.version>
         <lombok.version>1.16.20</lombok.version>
         <mybatis.plus.version>3.3.2</mybatis.plus.version>
+        <zxing.version>3.5.1</zxing.version>
     </properties>
 	
     <!-- 依赖声明 -->
@@ -254,6 +255,20 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis.plus.version}</version>
+        </dependency>
+
+
+        <!--如果是非 web 应用则导入 core 包即可，如果是 web 应用，则 core 与 javase 一起导入。-->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>${zxing.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>${zxing.version}</version>
         </dependency>
     </dependencies>
 
